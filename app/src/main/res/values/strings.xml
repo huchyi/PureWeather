@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pure天气</string>
+    <string name="add_city">添加城市</string>
+    <string name="close">关闭</string>
+    <string name="open">打开</string>
+    <string name="search_city">搜索城市</string>
+    <string name="version_change_log">2016-01-23 13:58\n\n1、修复手机重启后桌面插件消失的问题\n\n2、修复桌面重启后桌面插件消失的问题\n\n3、修复桌面插件有时点击无效的问题\n\n4、修复不能同时添加2款同样的插件的问题\n\n5、修复更换桌面插件颜色后出现颜色不一致的问题\n\n6、添加使用小助手\n\n7、进一步优化apk体积大小(仅1.22M)\n\n8、优化删除城市的体验</string>
+    <string name="use_assistant">一、使用助手\n\n1、主页面上半部下拉刷新天气\n\n2、左侧抽屉城市列表下拉刷新所有已添加城市天气\n\n二、注意\n\n1、如果通知栏出现字看不清的情况，请到APP设置中更换一下通知栏底色即可正常显示\n\n2、为了保证桌面部件和后台更新能正常工作，请将APP添加到系统或各安全软件白名单中以防后台服务被杀死\n\n三、彩蛋\n\n自定义背景,找一张图片，命名为purebg，扔在SD卡根目录，然后重启APP即可~</string>
+</resources>

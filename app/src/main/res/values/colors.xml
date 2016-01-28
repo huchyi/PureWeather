@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="textColorPrimaryDark">#88607D8B</color>
+    <color name="colorPrimaryDark">#607D8B</color>
+    <color name="colorAccent">#607D8B</color>
+    <color name="textColorPrimary">@color/colorPrimary</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_dark">#BB000000</color>
+    <color name="home_text_color">@color/white</color>
+    <color name="forecast_details_text_color">@color/white</color>
+    <color name="forecast_details_divider_color">@color/home_divider_color</color>
+    <color name="home_text_color_dark">#AAFFFFFF</color>
+    <color name="home_divider_color">#55FFFFFF</color>
+    <color name="home_snack_bar_background">@color/colorPrimary</color>
+    <color name="home_snack_bar_text">@color/white</color>
+    <color name="my_orange">#ea8010</color>
+    <color name="level_one">#68CB00</color>
+    <color name="level_two">#F6E200</color>
+    <color name="level_three">#FB890F</color>
+    <color name="level_four">#DF2D00</color>
+    <color name="level_five">#B414BB</color>
+    <color name="level_six">#6F0474</color>
+    <color name="transparent">#00000000</color>
+    <color name="notification_transparent">@color/transparent</color>
+    <color name="notification_black">@color/black</color>
+    <color name="notification_white">#FAFAFA</color>
+    <color name="notification_text_white">@color/white</color>
+    <color name="notification_text_black">@color/black</color>
+    <color name="widget_text_white">@color/white</color>
+    <color name="widget_text_black">@color/black</color>
+    <color name="settings_background">#EEEEEE</color>
+</resources>

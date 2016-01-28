@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="base_api_url">http://weatherapi.market.xiaomi.com/wtr-v2/weather?cityId=</string>
+    <string name="config">config</string>
+    <string name="auto_update_weather">auto_update_weather</string>
+    <string name="notification_service">notification_service</string>
+    <string name="auto_update_weather_mode">auto_update_weather_mode</string>
+    <string name="auto_update_weather_interval">auto_update_weather_interval</string>
+    <string name="notification_color">notification_color</string>
+    <string name="widget_text_color">widget_text_color</string>
+    <string name="version_1_4_3_note_read">version_1_4_3_note_read</string>
+    <string name="transition_animation">transition_animation</string>
+    <string name="default_page">default_page</string>
+</resources>

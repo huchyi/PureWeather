@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomView">
+        <attr name="pure_title" format="string|reference" />
+        <attr name="pure_off" format="string|reference" />
+        <attr name="pure_on" format="string|reference" />
+        <attr name="pure_icon" format="reference" />
+        <attr name="pure_default_desc" format="string|reference" />
+        <attr name="pure_titleTextColor" format="color" />
+        <attr name="pure_value" format="string|reference" />
+        <attr name="pure_valueTextColor" format="color" />
+        <attr name="pure_topLine" format="boolean" />
+        <attr name="pure_bottomLine" format="boolean" />
+        <attr name="pure_leftLine" format="boolean" />
+        <attr name="pure_rightLine" format="boolean" />
+        <attr name="pure_lineColor" format="color" />
+        <attr name="pure_leftTitle" format="string|reference" />
+        <attr name="pure_rightTitle" format="string|reference" />
+        <attr name="pure_leftTitleTextColor" format="color" />
+        <attr name="pure_rightTitleTextColor" format="color" />
+        <attr name="pure_leftValue" format="string|reference" />
+        <attr name="pure_rightValue" format="string|reference" />
+        <attr name="pure_leftValueTextColor" format="color" />
+        <attr name="pure_rightValueTextColor" format="color" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="3dp"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <hanjie.app.pureweather.view.HalfCircleProgressView
+                android:id="@+id/hcpv_aqi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_quality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textSize="25sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="15dp">
+                    <!--区域1-->
+
+                    <hanjie.app.pureweather.view.TriangleDataDisplayView
+                        android:id="@+id/tddv_pm"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:pure_icon="@mipmap/ic_pm"
+                        app:pure_rightLine="true"
+                        app:pure_leftTitle="PM2.5"
+                        app:pure_leftTitleTextColor="@color/textColorPrimaryDark"
+                        app:pure_leftValueTextColor="@color/textColorPrimary"
+                        app:pure_lineColor="@color/textColorPrimaryDark"
+                        app:pure_rightTitle="PM10"
+                        app:pure_rightTitleTextColor="@color/textColorPrimaryDark"
+                        app:pure_rightValueTextColor="@color/textColorPrimary" />
+
+                    <!--区域2-->
+                    <hanjie.app.pureweather.view.TriangleDataDisplayView
+                        android:id="@+id/tddv_sono"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:pure_icon="@mipmap/ic_aqi"
+                        app:pure_leftTitle="SO2"
+                        app:pure_leftTitleTextColor="@color/textColorPrimaryDark"
+                        app:pure_leftValueTextColor="@color/textColorPrimary"
+                        app:pure_lineColor="@color/textColorPrimaryDark"
+                        app:pure_rightTitle="NO2"
+                        app:pure_rightTitleTextColor="@color/textColorPrimaryDark"
+                        app:pure_rightValueTextColor="@color/textColorPrimary" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_src"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/textColorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

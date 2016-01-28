@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="3dp"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <hanjie.app.pureweather.view.TipTitleView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:pure_bottomLine="true"
+                app:pure_icon="@mipmap/ic_settings_notification"
+                app:pure_lineColor="#77a9b7b7"
+                app:pure_title="通知"
+                app:pure_titleTextColor="@color/textColorPrimary" />
+
+            <hanjie.app.pureweather.view.CheckBoxItemView
+                android:id="@+id/item_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                app:pure_off="已关闭"
+                app:pure_on="已开启"
+                app:pure_title="通知栏显示" />
+
+            <hanjie.app.pureweather.view.SimpleSelectItemView
+                android:id="@+id/item_notificationColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                app:pure_title="通知栏底色" />
+
+            <hanjie.app.pureweather.view.TipTitleView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:pure_bottomLine="true"
+                app:pure_icon="@mipmap/ic_settings_widget"
+                app:pure_lineColor="#77a9b7b7"
+                app:pure_title="部件"
+                app:pure_titleTextColor="@color/textColorPrimary" />
+
+            <hanjie.app.pureweather.view.SimpleSelectItemView
+                android:id="@+id/item_widgetTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                app:pure_title="桌面部件颜色" />
+
+            <hanjie.app.pureweather.view.TipTitleView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:pure_bottomLine="true"
+                app:pure_icon="@mipmap/ic_settings_houtai"
+                app:pure_lineColor="#77a9b7b7"
+                app:pure_title="后台"
+                app:pure_titleTextColor="@color/textColorPrimary" />
+
+            <hanjie.app.pureweather.view.CheckBoxItemView
+                android:id="@+id/item_autoUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                app:pure_off="已关闭"
+                app:pure_on="已开启"
+                app:pure_title="后台自动更新" />
+
+            <hanjie.app.pureweather.view.SimpleSelectItemView
+                android:id="@+id/item_autoUpdateMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                app:pure_title="更新模式" />
+
+            <hanjie.app.pureweather.view.SimpleSelectItemView
+                android:id="@+id/item_autoUpdateInterval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                app:pure_title="更新频率" />
+
+            <hanjie.app.pureweather.view.TipTitleView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:pure_bottomLine="true"
+                app:pure_icon="@mipmap/ic_settings_animation"
+                app:pure_lineColor="#77a9b7b7"
+                app:pure_title="动画"
+                app:pure_titleTextColor="@color/textColorPrimary" />
+
+            <hanjie.app.pureweather.view.CheckBoxItemView
+                android:id="@+id/item_transitionAnimation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                app:pure_off="已关闭"
+                app:pure_on="已开启"
+                app:pure_title="转场动画 (Android 5.0+)" />
+
+            <hanjie.app.pureweather.view.TipTitleView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:pure_bottomLine="true"
+                app:pure_icon="@mipmap/ic_settings_others"
+                app:pure_lineColor="#77a9b7b7"
+                app:pure_title="其他"
+                app:pure_titleTextColor="@color/textColorPrimary" />
+
+            <hanjie.app.pureweather.view.SimpleSelectItemView
+                android:id="@+id/item_defaultPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                app:pure_title="首页默认显示页" />
+
+            <hanjie.app.pureweather.view.TipTitleView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:pure_bottomLine="true"
+                app:pure_icon="@mipmap/ic_settings_about"
+                app:pure_lineColor="#77a9b7b7"
+                app:pure_title="关于"
+                app:pure_titleTextColor="@color/textColorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/rl_useAssistant"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="使用小贴士"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/ic_right_arrow_app_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#77a9b7b7" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_versionChangeLog"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="版本更新日志"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/ic_right_arrow_app_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#77a9b7b7" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_aboutInfo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="关于 - 联系作者"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/ic_right_arrow_app_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#77a9b7b7" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

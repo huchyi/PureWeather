@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_noRealTimeData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/home_text_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_realTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <!--区域1-->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <hanjie.app.pureweather.view.VerticalDataDisplayView
+                        android:id="@+id/vddv_aqi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackground"
+                        app:pure_bottomLine="true"
+                        app:pure_icon="@mipmap/ic_aqi_white"
+                        app:pure_lineColor="@color/home_divider_color"
+                        app:pure_titleTextColor="@color/home_text_color"
+                        app:pure_valueTextColor="@color/home_text_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_noAQIData"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:text="无空气质量信息"
+                            android:textColor="@color/home_text_color" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2px"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/home_divider_color"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+
+                </FrameLayout>
+
+                <!--区域2-->
+                <hanjie.app.pureweather.view.TriangleDataDisplayView
+                    android:id="@+id/tddv_feng"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:pure_icon="@mipmap/ic_fengli_white"
+                    app:pure_leftLine="true"
+                    app:pure_leftTitle="风向"
+                    app:pure_leftTitleTextColor="@color/home_text_color_dark"
+                    app:pure_leftValueTextColor="@color/home_text_color"
+                    app:pure_lineColor="@color/home_divider_color"
+                    app:pure_rightTitle="风力"
+                    app:pure_rightTitleTextColor="@color/home_text_color_dark"
+                    app:pure_rightValueTextColor="@color/home_text_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <!--区域3-->
+                <hanjie.app.pureweather.view.VerticalDataDisplayView
+                    android:id="@+id/vddv_shidu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:pure_icon="@mipmap/ic_shidu_white"
+                    app:pure_lineColor="@color/home_divider_color"
+                    app:pure_rightLine="true"
+                    app:pure_title="湿度"
+                    app:pure_titleTextColor="@color/home_text_color_dark"
+                    app:pure_valueTextColor="@color/home_text_color" />
+
+                <!--区域4-->
+                <hanjie.app.pureweather.view.TriangleDataDisplayView
+                    android:id="@+id/tddv_sunriseset"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:pure_icon="@mipmap/ic_sunriseandsunset_white"
+                    app:pure_topLine="true"
+                    app:pure_leftTitle="日出"
+                    app:pure_leftTitleTextColor="@color/home_text_color_dark"
+                    app:pure_leftValueTextColor="@color/home_text_color"
+                    app:pure_lineColor="@color/home_divider_color"
+                    app:pure_rightTitle="日落"
+                    app:pure_rightTitleTextColor="@color/home_text_color_dark"
+                    app:pure_rightValueTextColor="@color/home_text_color" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
