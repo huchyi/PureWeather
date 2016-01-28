@@ -3,7 +3,6 @@ package hanjie.app.pureweather.activities;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.umeng.analytics.MobclickAgent;
 
 import hanjie.app.pureweather.R;
 import hanjie.app.pureweather.bean.WeatherAQI;
